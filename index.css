@@ -1,0 +1,397 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-color: #ddd;
+}
+
+.header{ 
+	top: 0;
+	position: fixed;
+	z-index: 100;
+	display: flex;
+	width: 100vw;
+	height: 6vh;
+	background-color: white;
+}
+
+.name{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.menu{
+	margin-left: 17vh;
+	height: 6vh;
+	width: 38vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	
+}
+
+@media only screen and (max-width: 1000px){
+	.menu{
+	margin-left: 50px;
+	
+}
+}
+
+@media only screen and (max-width: 650px){
+	.menu{
+	margin-left: 10px;
+	
+}
+}
+
+.twittericon1{
+	color: 	#1DA1F2;
+	font-size: 23px;
+	margin-left: 40px;
+}
+
+@media only screen and (max-width: 1000px){
+	.twittericon1{
+	margin-left: 20px;
+}
+
+
+}
+
+.menu>a{
+	padding: 3%;
+	color: black;
+	text-decoration: none;
+}
+
+
+
+.buttonhead{
+	
+	margin-top: 0.65vh;
+    border-radius: 15px;
+	width: 90px;
+	height: 30px;
+	margin-left: 40vw; 
+	background-color: #1DA1F2;
+	border-style: none; 
+	font-size: 16px;
+	color: white;
+}
+
+
+
+@media only screen and (max-width: 1000px){
+	.buttonhead{
+	
+	margin-top: 0vh;
+    
+	margin-left: 45vw; 
+}
+
+}
+
+
+.main{
+	margin-top: 45px;
+	display: grid;
+	grid-template-columns: 22vw 37vw 22vw;
+	grid-gap: 10px;
+	
+	margin-left: 8.5vw;
+	margin-right: 8.5vw;
+}
+
+@media only screen and (max-width: 1000px){
+	.main{
+	margin-top: 45px;
+	display: grid;
+	grid-template-columns: 35vw 50vw;
+	grid-gap: 10px;
+	
+	margin-left: 8.5vw;
+	margin-right: 8.5vw;
+  }
+}
+
+@media only screen and (max-width: 650px){
+    .main{
+	
+	grid-template-columns: 80vw 80vw;
+	
+  }
+
+	.firstcol{
+		grid-row: 1;
+	
+  }
+
+  	.secondcol{
+		grid-row: 2;
+	
+  }
+
+}
+
+
+.main>div{
+	background-color: white;
+}
+
+.main>div:nth-child(1){
+	height: 300px;
+}
+
+.main>div:nth-child(2){
+	height: 400px;
+}
+
+.main>div:nth-child(3){
+	height: 300px;
+}
+
+.firstcol{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.firstcol>div{
+	background-color: white;
+	height: 100vh;
+}
+
+.anime{
+	background-image: url(./images/whitebird.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.secondcol{
+	display: flex;
+	flex-direction: column;
+}
+
+.secondcol>div{
+	background-color: white;
+	height: 100vh;
+}
+
+.thirdcol{
+	display: flex;
+	flex-direction: column;
+}
+
+@media only screen and (max-width: 1000px){
+	.thirdcol{
+	display: none;
+}
+
+
+}
+
+.thirdcol>div{
+	background-color: white;
+	height: 100vh;
+
+}
+
+.profileimg{
+	position: relative;
+	top: -30px;
+	margin-left: 20px;
+	width: 100px;
+	height: 100px;
+	border-radius: 60px;
+	background-image: url(./images/blackman.jpg);
+	background-position: center;
+	background-size: cover;
+	border: 5px solid white;
+}
+
+.flex{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.nameandmail{
+	display: flex;
+	flex-direction: column;
+}
+
+.name{
+	color: #000000;
+
+}
+
+.username{
+	color: #808080;
+}
+
+.following{
+   display: flex;
+   justify-content: space-between;
+   margin-right: 18px;
+   margin-left: 18px;
+   color: grey;
+   font-weight: bold;
+}
+
+.followingnumbers{
+	display: flex;
+   justify-content: space-between;
+   padding-right: 45px;
+
+   margin-right: 20px;
+   margin-left: 20px;
+   color: #1DA1F2;
+
+}
+
+.padd{
+	padding-right: 30px;
+
+}
+
+
+.following>p{
+
+	
+	float: left;
+
+
+}
+
+.image2{
+	background-image: url(./images/blackman.jpg);
+}
+
+.image3{
+	background-image: url(./images/bluebird.jpg);
+}
+
+.image4{
+	background-image: url(./images/blackwoman.jpg);
+}
+
+.image2,.image3,.image4{
+	height: 60px;
+	min-width: 55px;
+	border-radius: 30px;
+	background-color: red;
+	margin-top: 8px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	background-position: center;
+	background-size: cover;
+}
+
+.besidepic{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.text{
+	margin-top: 20px;
+	float: left;
+}
+
+.prof{
+	display: flex;
+
+}
+
+.nameandmail2{
+	display: flex;
+
+}
+
+.nameandmail2>p{
+padding-left: 5px;
+font-size: 14px;
+}
+
+.namecol2{
+	font-weight: bold;
+}
+
+.whofollow{
+	display: flex;
+	align-items: center;
+	margin-left: 7px;
+
+
+}
+
+.whofollowbtn{
+	width: 60px;
+	height: 30px;
+	color: #1DA1F2;
+	background-color: transparent;
+	border: 1px solid #1DA1F2;
+	border-radius: 10px;
+
+
+}
+
+.btnwho{
+	padding-top: 10px;
+}
+
+
+hr{
+	border-top: 1px solid #DCDCDC;
+}
+
+.col3{
+	margin-left: 5%;
+	width: 90%;
+}
+
+.headicon{
+	display: none;
+	margin-left: 0vh;
+}
+
+
+@media only screen and (max-width: 450px){
+	.menu>a{
+		display: none;
+		
+
+	}
+
+	.headicon>i{
+	float: left;
+	padding-left: 21px;
+	text-align: center;
+	margin-top: 9px;
+	margin-left: 0;
+	margin-right: 0;
+
+}
+
+.headicon{
+	display: block;
+	width: 90vw;
+}
+
+
+
+.buttonhead{
+	margin-left: 0;
+	margin-top: 3px;
+}
+	
+}
+
+
+
+
+
+
+
